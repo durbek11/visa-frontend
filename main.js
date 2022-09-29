@@ -1,27 +1,27 @@
 new WOW().init();
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        if(this.scrollY > 3000){
+$(document).ready(function () {
+    $(window).scroll(function () {
+        if (this.scrollY > 3000) {
             $(`.navbar`).addClass(`sticky`);
-        }else{
+        } else {
             $(`.navbar`).removeClass(`sticky`);
         }
-        if(this.scrollY > 500){
+        if (this.scrollY > 500) {
             $('.scroll-up-btn').addClass("show");
-        }else{
+        } else {
             $(".scroll-up-btn").removeClass("show");
         }
     });
-    $(".scroll-up-btn").click(function(){
-        $('html').animate({scrollTop: 0});
+    $(".scroll-up-btn").click(function () {
+        $('html').animate({ scrollTop: 0 });
     })
-    
-    $(`.scroll-btn`).click(function(){
-        $('html').animate({scrollTop:0})
+
+    $(`.scroll-btn`).click(function () {
+        $('html').animate({ scrollTop: 0 })
     });
     //toog;r navbar
-    $(`.menu-btn`).click(function(){
+    $(`.menu-btn`).click(function () {
         $(`.navbar`).toggleClass(`active`);
         $(`.menu-btn i`).toggleClass(`active`);
     });
@@ -51,29 +51,29 @@ for (i = 0; i < faq.length; i++) {
 }
 
 
-function card1(x){
+function card1(x) {
     x = document.getElementById(`act-line`).style.left = `0`;
     x = document.getElementById(`act2-line`).style.top = `0`;
 }
 
-function card2(x){
+function card2(x) {
     x = document.getElementById(`act-line`).style.left = `25%`;
     x = document.getElementById(`act2-line`).style.top = `20%`;
 }
 
-function card3(x){
+function card3(x) {
     x = document.getElementById(`act-line`).style.left = `48%`;
     x = document.getElementById(`act2-line`).style.top = `40%`;
 }
 
-function card4(x){
+function card4(x) {
     x = document.getElementById(`act-line`).style.left = `67%`
-    x = document.getElementById(`act-line`).style.width=`17%`;
+    x = document.getElementById(`act-line`).style.width = `17%`;
     x = document.getElementById(`act2-line`).style.top = `55%`;
 }
 
-function card5(x){
+function card5(x) {
     x = document.getElementById(`act-line`).style.left = `83%`;
-    x = document.getElementById(`act-line`).style.width=`17%`;
+    x = document.getElementById(`act-line`).style.width = `17%`;
     x = document.getElementById(`act2-line`).style.top = `70%`;
 }
