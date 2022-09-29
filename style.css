@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#act2-line{
+    transition: .5s;
+}
+/*navbar*/
+nav{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+    margin-top: 48px;
+    position: fixed;
+    width: 100vw;
+    padding: 0 8% 0 10%;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    flex: none;
+    order: 0;
+    flex-grow: 0;   
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+nav .navbar{
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-btn{
+    display: none;
+}
+nav .navbar .menu{
+    width:40vw;
+    display: flex;
+    justify-content: center;
+}
+nav .navbar .menu ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav .navbar .menu ul li {
+    list-style: none;
+}
+nav .navbar .menu ul li a{
+    display: inline;
+    margin-left: 3%;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+nav .navbar .login{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: center;
+}
+nav .navbar .login .btn-group{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+nav .navbar .login .log{
+    padding: 11px 16px;
+    gap: 10px;
+    background: none;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+nav .navbar .login .sign{
+    padding: 11px 16px;
+    gap: 10px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+    
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+nav a{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    /* identical to box height */
+    text-decoration: none;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    
+    color: #ffffff;
+}
+nav .navbar .menu li a:hover{
+    color: #ffffff;
+}
+.navbar.sticky{
+    background: #0A0A0A;
+    padding: 15px 0;
+}
+nav .navbar .login .sign a{
+    color: #0A0A0A;
+}
+
+
+
+
+/*main*/
+body{
+    background: url(./img/Rectangle\ 2.png);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*first*/
+.first-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    width: 100vw;
+    height: 100vh;
+}
+.first-page h1{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 64px;
+    color: #ffffff;
+}
+.first-page p{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 37px;
+    width: 75%;
+    margin-top: 21px;
+    margin-bottom: 24px;
+}
+.first-page button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 0px;
+    /* identical to box height, or 0% */
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.first-page button img{
+    padding-left: 12px;
+}
+.first-page .left{
+    width: 55%;
+}
+.first-page .right{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first-page .right img{
+    width: 80%;
+}
+
+/*cards*/
+
+.line{
+    position: relative;
+    width: 80%;
+    margin: 0% 10%;
+    transition: .5s;
+    height: 1px;
+    margin-bottom: 36px;
+    background: rgba(255, 255, 255, 0.1);
+}
+#act-line{
+    position: absolute;
+    width: 20%;
+    background: #FFFFFF;
+    height: 2px;
+    left: 0;
+    transition: .5s;
+}
+.img-card img{
+    margin-left: 8px;
+    margin-right: 24px;
+}
+.card-content{
+    width: 100vw;
+    padding: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.card-1 a{
+    display: flex;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    margin-right: 24px;
+    /* or 128% */
+    
+    
+    color: rgba(255, 255, 255, 0.5);
+    
+    
+    /* Inside auto layout */
+    text-decoration: none;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+
+/*steps*/
+
+.steps h2{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 68px;
+    /* identical to box height, or 170% */
+    
+    letter-spacing: -0.025em;
+    
+    color: #FFFFFF;
+    width: 100vw;
+    padding: 100px 10%;
+    
+}
+.step{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100vw;
+    padding: 0% 10%;
+}
+.step .step-page{
+    width: calc(28% - 50px);
+}
+.step .step-page span{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 100px;
+    /* or 111% */
+    
+    letter-spacing: -0.025em;
+    padding-top: 64px;
+    color: #FFFFFF;
+}
+.step .step-page h3{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 72px;
+    line-height: 21px;
+    /* identical to box height, or 95% */
+    
+    
+    color: #FFFFFF;
+}
+.step .step-page p{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    /* or 144% */
+    padding-top: 16px;
+    letter-spacing: 0.01em;
+    padding-bottom: 24px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.step .step-page button{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 0px;
+
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid #FFFFFF;
+    border-radius: 40px;
+    /* identical to box height, or 0% */
+    
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 35px;
+    gap: 8px;
+    margin-bottom: 50px;
+    
+    color: #FFFFFF;
+}
+.step .step-page button img{
+    margin-left: 12px;
+}
+
+/*FAQ*/
+.faq-heading{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 68px;
+    /* identical to box height, or 170% */
+    margin-top: 50px;
+    margin-bottom: 64px;
+    letter-spacing: -0.025em;
+    padding-left: 10%;
+    color: #FFFFFF;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding-left: 40%;
+width: 80%;
+margin-bottom: 250px;
+}
+.hr-line{
+    width: 60%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 68px;
+/* identical to box height, or 227% */
+
+letter-spacing: -0.025em;
+
+color: #FFFFFF;
+    cursor: pointer;
+    padding: 17px 0px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+.faq-body{
+    margin-left: 100px;
+    /* text-align: center; */
+   width: 80%; 
+   font-family: 'Nunito Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 23px;
+   /* or 144% */
+   
+   letter-spacing: 0.01em;
+   
+   color: rgba(255, 255, 255, 0.7);
+   padding: auto;
+   
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: none;
+}
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 16px 18px 40px;
+    display: none;
+    overflow: hidden;
+}
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+
+/*responsive*/
+
+
+@media(max-width:1350px){
+    .first-page h1{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 64px;
+        color: #ffffff;
+    }
+    .first-page p{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+        line-height: 37px;
+        width: 75%;
+    }
+
+}
+
+
+@media(max-width:1200px){
+    .first-page h1{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 64px;
+        color: #ffffff;
+    }
+
+    .first-page p{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 37px;
+        width: 75%;
+    }
+}
+@media(max-width:1100px){
+    .first-page h1{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 64px;
+        color: #ffffff;
+    }
+    .first-page p{
+        font-family: 'Nunito Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        line-height: 37px;
+        width: 85%;
+    }
+
+}
+
+
+
+@media(max-width:950px){
+    
+.menu-btn{
+    display: block;
+    z-index: 9999;
+}
+.menu-btn i.active:before{
+    content: "\f00d";
+}
+.navbar.active.active{
+    left: 0;
+}
+.navbar{
+    z-index: 99999;
+    position: fixed;
+    left:-150%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(254, 232, 165);
+    text-align: center;
+    padding-top: 150px;
+    display: block;
+    transition: all .3s ease;
+}
+nav .navbar{
+    width: auto;
+}
+.navbar.active .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+nav .navbar .menu ul li{
+    padding: 10px 0px;
+}
+nav .navbar .menu ul{
+    display: block;
+}
+nav .navbar{
+    display: block;
+}
+.login .btn-group button{
+    display: block;
+}
+nav .navbar .login .btn-group{
+    display: block;
+    text-align: center;
+}
+nav .navbar .login{
+    width: 100%;
+}
+
+
+
+
+/*first*/
+
+.first-page{
+    display: block;
+}
+.first-page .left{
+    text-align: center;
+    width: 80vw;
+    padding-top: 200px;
+}
+.first-page h1{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 64px;
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.first-page p{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 37px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.first-page button{
+    padding: 20px 30px;
+}
+.first-page .btn{
+    display: flex;
+    justify-content: center;
+}
+.first-page .right{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.first-page .right img{
+    width: 45%;
+}
+/*steps*/
+
+.step .step-page{
+    width: calc(45% - 50px);
+}
+.faq-container{
+    padding-left: 10%;
+    width: 90%;
+}
+.hr-line{
+    width: 100%;
+}
+.faq-page{
+    font-size: 28px;
+}
+}
+
+@media(max-width:850px){
+    .line{
+        width: 1px;
+        height: 450px;
+    }
+    .card-1{
+        display: block;
+        margin: 35px 10px;
+        width: 65%;
+    }
+    .card-content{
+        display: block;
+    }
+    .card-grp{
+        display: flex;
+        padding-left: 10%;
+    }
+    .active-line{
+        position: absolute;
+        width: 2px;
+        background: #FFFFFF;
+        height: 20%;
+    }
+    .step .step-page button{
+        padding: 20px 30px;
+    }
+}
+
+@media(max-width:850px){
+    .step{
+        display: block;
+    }
+    .step .step-page{
+        width: calc(80% - 50px);
+        padding-left: 25%;
+    }
+}
+
+@media(max-width:650px){
+    .step{
+        display: block;
+    }
+    .step .step-page{
+        width: calc(90% - 50px);
+        padding-left: 15%;
+    }
+    .faq-page{
+        font-size: 25px;
+    }
+    .faq-heading{
+        font-size: 35px;
+    }
+    .steps h2{
+        font-size: 35px;
+    }
+}
+@media(max-width:600px){
+    
+    .faq-page{
+        font-size: 20px;
+    }
+    .faq-heading{
+        font-size: 33px;
+    }
+    .steps h2{
+        font-size: 28px;
+    }
+}
+
+
+@media(max-width:450px){
+    
+nav .navbar{
+    width: 100%;
+}
+nav .navbar .menu{
+    width: 100%;
+}
+    
+.faq-page{
+    font-size: 17px;
+}
+.faq-heading{
+    font-size: 28px;
+}
+.steps h2{
+    font-size: 25px;
+}
+.card-1{
+    width: 100%;
+}
+}
+@media(max-width:370px){
+    .faq-page{
+        font-size: 14px;
+    }
+    .faq-heading{
+        font-size: 22px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
